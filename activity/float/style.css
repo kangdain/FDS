@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.wrapper{
+    width: 940px;
+}
+.box {
+    display: inline-block;
+    background: orange;
+    width: 60px;
+    height: 60px;
+}
+.row{
+    float: right;
+}
+.wrapper .row .row-1{
+    float: right;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Layout</title>
+  <style>
+    /*
+    .wrapper [class^="box"] {
+    background: darkgreen none repeat scroll 0 0;
+    border: 10px solid red;
+    color: #fff;
+    float: left;
+    font-size: 30px;
+    height: 50%;
+    margin-left: -10px;
+    margin-right: -10px;
+    text-align: center;
+    width: 50%;
+}
+    */
+body {
+    margin: 50px;
+    color: #fff;
+}
+.wrapper{
+    background: skyblue;
+    width: 800px;
+    height: 800px;   
+}
+
+.wrapper::after{
+   content: "";
+   display: table;
+  clear: both;
+}
+ .box{
+   
+   height: 200px;
+   width: 200px;
+  
+ }
+.row-1{
+  width: 200px;
+  float: right;
+}
+.box-1,.box-2,.box-3,.box-4{
+  background: blueviolet;
+  float: right;
+  
+}
+.row-2{
+    float:right;
+    width: 400px;
+    height: 400px;
+}
+.box-5,.box-6,.box-7,.box-8{
+  background: palegreen;
+  float: left;
+  width: 200px;
+  height: 200px;
+  
+}
+
+.row-3{
+  background: green;
+    float:right;
+    width: 400px;
+    height: 400px;
+}
+
+.box-9,.box-10,.box-11,.box-12{
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+/*.box-9,.box-10{
+  float: right;
+}
+.box-11,.box-12{
+  float: right;
+}*/
+.inner-row1{
+  float: right;
+  width: 200px;
+}
+.inner-row2{
+  float: right;
+  width: 200px;
+}
+.row-4{
+  background: orangered;
+  float:right;
+  width: 200px;
+  margin-top: -400px;  
+}
+.box-13,.box-14,.box-15,.box-16{
+  
+  float: left;
+  width: 200px;
+  height: 200px;
+  
+}
+.row .box:nth-child(1){
+  background: #061733;
+}
+.row .box:nth-child(2){
+  background: #113166;
+}
+.row .box:nth-child(3){
+  background: #4d6fa8;
+}
+.row .box:nth-child(4){
+  background: #dbdde0;
+}
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="row row-1">
+      <div class="box box-1"> 첫번 째 상자 </div>
+      <div class="box box-2"> 두번 째 상자 </div>
+      <div class="box box-3"> 세번 째 상자 </div>
+      <div class="box box-4"> 네번 째 상자 </div>
+    </div>
+
+    <div class="row row-2">
+    <div class="box box-5"> 다섯번 째 상자 </div>
+    <div class="box box-6"> 여섯번 째 상자 </div>
+    <div class="box box-7"> 일곱번 째 상자 </div>
+    <div class="box box-8"> 여덟번 째 상자 </div>
+    </div>
+
+    <div class="row row-3">
+    <div class="row inner-row1"> 
+    <div class="box box-9"> 아홉번 째 상자 </div>
+    <div class="box box-10"> 열번 째 상자 </div>
+    </div> 
+     <div class="row inner-row1"> 
+    <div class="box box-11"> 열한번 째 상자 </div>
+    <div class="box box-12"> 열두번 째 상자 </div>
+    </div>
+    </div>
+
+    <div class="row row-4">
+    <div class="box box-13"> 열세번 째 상자 </div>
+    <div class="box box-14"> 열네번 째 상자 </div>
+    <div class="box box-15"> 열다섯번 째 상자 </div>
+    <div class="box box-16"> 열여섯번 째 상자 </div>
+    </div>
+    
+  </div>
+</body>
+</html>
