@@ -58,8 +58,6 @@ body{
 .btn-2:hover::after{
   left: 0;
   width: 100%;
-  /*right: 50%;*/
-
 }
 .btn-3{
   width: 250px;
