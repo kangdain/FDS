@@ -1,0 +1,83 @@
+html,body{
+    font-family: Roboto;
+      background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+      font-size: 20px;
+      color: #fff;
+}
+.container{
+    
+    width: 400px;
+    margin: 100px auto;
+    background: rgb(255, 255, 255);
+    /*text-align: center;*/
+    overflow: hidden;
+    
+}
+input {
+    font-size: 18px;
+    color: rgb(16, 119, 59);
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    border: 3px solid rgba(0,0,0,0);
+    box-sizing: border-box;
+}
+h1{
+    font-size: 28px;
+    background: rgb(47, 168, 89);
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+/*button{
+    clear:both;
+}*/
+.fa-plus{
+    float: right;
+}
+.fa-plus:hover{
+    cursor: pointer;
+}
+
+/*.fa::after{
+    content: "";
+    display: block;
+    clear: both;
+}*/
+ul{
+    color: rgb(102, 102, 102);
+    width: 200px;
+    margin: 0;
+	padding: 0;
+    list-style: none;
+    padding-left:0; 
+    margin-right: 50%;  
+    transform: translateX(50%);
+    
+}
+span {
+	background: #e74c3c;
+	height: 40px;
+	margin-right: 20px; 
+    margin-left: -100px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	opacity: 0;
+    transition: 0.2S;
+}
+li{
+    display: block;
+    line-height: 40px;
+    width: 400px;
+    
+    
+}
+li:hover span {
+	width: 40px;
+	opacity: 1;
+    cursor: pointer;
+}
+
+
