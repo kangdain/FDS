@@ -61,8 +61,9 @@ function init(){
       var li = document.createElement("li");
       var inputVal = input.value;
       ul.appendChild(li);
-      li.insertAdjacentHTML('beforeend','<span><i class="fa fa-trash-o" aria-hidden="true" onclick="bindEvent()"></i></span>');
-      // trashs = document.querySelectorAll(".fa-trash-o");
+      li.insertAdjacentHTML('beforeend','<a><i class="fa fa-trash-o" aria-hidden="true" onclick="bindEvent()"></i></a>');
+      trashs = document.querySelectorAll(".fa-trash-o");
+      trashs.onclick = removeList;
       // bindEvent();
       var text = document.createTextNode(inputVal);
       li.appendChild(text);

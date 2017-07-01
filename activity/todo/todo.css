@@ -55,7 +55,7 @@ ul{
     transform: translateX(50%);
     
 }
-span {
+a {
 	background: #e74c3c;
 	height: 40px;
 	margin-right: 20px; 
@@ -74,7 +74,7 @@ li{
     
     
 }
-li:hover span {
+li:hover a {
 	width: 40px;
 	opacity: 1;
     cursor: pointer;
