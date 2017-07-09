@@ -1,0 +1,27 @@
+body{
+    color: white;
+    font-size: 28px;
+    
+}
+
+.section1{
+    background: salmon;
+    float: left;
+    width: 50%;
+    height: 100vh;
+}
+.section2{
+    background: seagreen;
+    float: right;
+    width: 50%;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+a{
+    cursor: pointer;
+}
